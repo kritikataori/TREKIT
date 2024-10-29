@@ -1,0 +1,36 @@
+#formFile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    /* Space between image containers */
+    position: relative;
+}
+
+#formFile img {
+    width: 100px;
+    height: 75px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    opacity: 85%;
+}
+
+.form-check {
+    margin-top: 5px;
+    /* Adds space between the image and the checkbox */
+}

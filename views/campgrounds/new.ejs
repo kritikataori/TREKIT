@@ -1,8 +1,9 @@
 <% layout('layouts/boilerplate') %>
+    <link rel="stylesheet" href="/stylesheets/images.css" class="rel">
     <div class="row">
         <h1 class="text-center">New Campground</h1>
         <div class="col-6 offset-3">
-            <form action="/campgrounds" method="POST" novalidate class='validated-form'>
+            <form action="/campgrounds" method="POST" novalidate class='validated-form' enctype="multipart/form-data">
 
                 <div class="mb-3">
                     <label class="form-label" for="title">Title</label>
@@ -23,14 +24,13 @@
                     </div>
                 </div>
 
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label class="form-label" for="image">Image Url</label>
                     <input class="form-control" type="text" id="image" name="campground[image]" required>
                     <div class="valid-feedback">
-                        <!-- class from bootstrap -->
                         Looks good!
                     </div>
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                     <label class="form-label" for="price">Campground Price</label>
@@ -53,6 +53,16 @@
                         <!-- class from bootstrap -->
                         Looks good!
                     </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Upload Image(s)</label>
+                    <div class="form-file custom-file">
+                        <input class="form-control custom-file-input" type="file" id="image" name="image" multiple
+                            onchange="previewMultiple(event)">
+                        <label for="image" class="form-label custom-file-label"></label>
+                    </div>
+                    <div id="formFile"></div>
                 </div>
 
                 <div class="mb-3">
