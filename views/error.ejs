@@ -6,9 +6,12 @@
                 <h4 class="alert-heading">
                     <%= err.message %>
                 </h4>
+                <!-- don't display the error stack outside of development mode -->
+                <% if (process.env.NODE_ENV !== "production"){ %>
                 <p class="text-break">
                     <!-- to stop the stack trace from spilling out of the container -->
                     <%=err.stack%>
+                    <% } %>
                 </p>
             </div>
         </div>
