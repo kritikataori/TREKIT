@@ -7,3 +7,23 @@
     width: 100%;
     height: 300px;
 }
+
+.custom-navbar, .custom-footer {
+    background-color: #000814 !important;
+    color: white;
+}
+
+body {
+    background-color: #89c2d9; 
+}
+
+.custom-card{
+    background-color: #003459; 
+    color: white;
+    border-radius: 15px;
+}
+
+.custom-card .list-group-item {
+    background-color: #003459; 
+    color: white;
+}

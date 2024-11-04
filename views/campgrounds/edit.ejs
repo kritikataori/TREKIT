@@ -1,5 +1,6 @@
 <% layout('layouts/boilerplate') %>
     <link rel="stylesheet" href="/stylesheets/images.css" class="rel">
+    <link rel="stylesheet" href="/stylesheets/app.css" class="rel">
     <div class="row">
         <h1 class="text-center">Edit Campground</h1>
         <div class="col-md-6 offset-md-3">
@@ -92,10 +93,10 @@
                         <% }) %>
                 </div>
 
-                <div class="mb-3">
-                    <button class="btn btn-info">Update Campground</button>
+                <div class="mb-1 d-flex justify-content-center">
+                    <button class="btn bg-dark text-light border-dark">Update Campground</button>
                 </div>
             </form>
-            <a href="/campgrounds/<%=campground._id%>">Back To Campground</a>
+            <a href="/campgrounds/<%=campground._id%>" style="color:black;">Back To Campground</a>
         </div>
     </div>
